@@ -15,6 +15,35 @@
         display: none;
       }
       
+      #img_1_txt{
+        position: absolute;
+        color: white;
+        text-align:center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+      
+      #img_2_txt{
+        position: absolute;
+        color: black;
+        text-align:center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+      
+      #img_3_txt{
+        position: absolute;
+        color: black;
+        text-align:center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
       
       .prev, .next {
         cursor: pointer;
@@ -81,18 +110,21 @@
       <div class="slides fade">
         <div id="img_1">
           <img src="http://seabeemagazine.navylive.dodlive.mil/files/2014/11/15574727648_d86280664b_z.jpg" style="width:100%;">
+          <div id="img_1_txt">[Text Here]</div>
         </div>
       </div>
       
       <div class="slides fade">
         <div id="img_2">
           <img src="http://www.missionscalifornia.com/sites/default/files/imagecache/full/03-Visher-Drawing-of-san-buenaventura.jpg" style="width:100%">
+          <div id="img_2_txt">[Text Here]</div>
         </div>
       </div>
       
       <div class="slides fade">
         <div id="img_3">
           <img src="http://www.missionscalifornia.com/sites/default/files/07.-Venturano-Chumash-Indian-Vilage.jpg" style="width:100%";>
+          <div id="img_3_txt">[Text Here]</div>
         </div>
       </div>
       
