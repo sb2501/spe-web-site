@@ -3,10 +3,11 @@
   <header>
     <style>
     body{
-      background-color: black;
+      
     }
       #slideshow-container {
-          max-width: 1000px;
+          max-width: 500px;
+          top: 100px;
           position: relative;
           margin: auto;
       }
@@ -15,35 +16,7 @@
         display: none;
       }
       
-      #img_1_txt{
-        position: absolute;
-        color: white;
-        text-align:center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-      }
-      
-      #img_2_txt{
-        position: absolute;
-        color: black;
-        text-align:center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-      }
-      
-      #img_3_txt{
-        position: absolute;
-        color: black;
-        text-align:center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-      }
+  
       
       .prev, .next {
         cursor: pointer;
@@ -105,43 +78,42 @@
   </header>
   
   <body>
+  
+    <div class="dropdown"> </div>
     <div id="slideshow-container">
       
       <div class="slides fade">
         <div id="img_1">
           <img src="http://seabeemagazine.navylive.dodlive.mil/files/2014/11/15574727648_d86280664b_z.jpg" style="width:100%;">
-          <div id="img_1_txt">[Text Here]</div>
+          <p>The base was originally meant to be a temporary wartime base for the Navy during World War II. The <br>land and coastline of Port Hueneme made it an ideal place for the construction of a wharf which <br>could be used by large ships to load and discharge cargo. After the creation of the wharf by Robert <br>Bard in 1871, the port became the second largest port on the Pacific coast for grain shipments of <br>barley, wheat, and corn. When shipment increased, a light house was built to improve navigation <br>and shone 40 miles out to sea. In order to accommodate the growing traffic in the port, the wharf <br>was extended from 900 feet to 1,500 feet, and it grew to 1,700 feet in 1912.</p>
         </div>
       </div>
       
       <div class="slides fade">
         <div id="img_2">
           <img src="http://www.missionscalifornia.com/sites/default/files/imagecache/full/03-Visher-Drawing-of-san-buenaventura.jpg" style="width:100%">
-          <div id="img_2_txt">[Text Here]</div>
         </div>
       </div>
       
       <div class="slides fade">
         <div id="img_3">
           <img src="http://www.missionscalifornia.com/sites/default/files/07.-Venturano-Chumash-Indian-Vilage.jpg" style="width:100%";>
-          <div id="img_3_txt">[Text Here]</div>
         </div>
-      </div>
       
-      
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-      <br>
-      <div style="text-align:center;">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
     
-    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <div style="text-align:center;">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      
+   </div>
     
     <script>
       var slideIndex = 1;
